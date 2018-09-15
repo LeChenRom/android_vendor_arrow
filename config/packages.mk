@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# LocationProvider
+PRODUCT_PACKAGES += \
+    PhoneLocationProvider
 
 # Required packages
 PRODUCT_PACKAGES += \
