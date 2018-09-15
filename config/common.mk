@@ -47,6 +47,16 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/build/tools/50-cm.sh:system/addon.d/50-cm.sh
 endif
 
+# Use all private libraries
+ifeq ($(SUDA_CPU_ABI),arm64-v8a)
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*.so,vendor/arrow/prebuilt/suda/lib/$(SUDA_CPU_ABI),system/lib64) \
+    $(call find-copy-subdir-files,*.so,vendor/arrow/prebuilt/suda/lib/armeabi-v7a/,system/lib)
+else
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*.so,vendor/arrow/prebuilt/suda/lib/$(SUDA_CPU_ABI),system/lib)
+endif
+
 # World APN list
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
