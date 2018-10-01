@@ -28,22 +28,25 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     Simple-Gallery \
     stats \
-    Stk
+    Stk \
+    Updater
 
 # Themes Dark
 PRODUCT_PACKAGES += \
     GBoardDarkTheme \
     SettingsDarkTheme \
     SystemDarkTheme \
-    SystemUIDarkTheme
+    SystemUIDarkTheme \
+    UpdaterDark
 
 # Themes Black
 PRODUCT_PACKAGES += \
     SettingsBlackTheme \
     SystemBlackTheme \
-    SystemUIBlackTheme
+    SystemUIBlackTheme \
+    UpdaterBlackAF
 
-# Overlays
+# Accents
 PRODUCT_PACKAGES += \
     AmberAccent \
     BlackAccent \
