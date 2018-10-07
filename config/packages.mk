@@ -29,6 +29,7 @@ PRODUCT_PACKAGES += \
     Simple-Gallery \
     stats \
     Stk \
+    ForceStop \
     Updater
 
 # Themes Dark
