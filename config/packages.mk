@@ -23,14 +23,14 @@ PRODUCT_PACKAGES += \
     Calendar \
     ExactCalculator \
     LatinIME \
-    Launcher3QuickStep \
     messaging \
     OmniJaws \
     Simple-Gallery \
     stats \
     Stk \
-    Updater
-
+    Updater \
+    Lawnchair
+    
 # Themes Dark
 PRODUCT_PACKAGES += \
     GBoardDarkTheme \
