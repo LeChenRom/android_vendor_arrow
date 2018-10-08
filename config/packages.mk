@@ -31,14 +31,11 @@ endif
 # Required packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
-    Browser \
     Calendar \
     ExactCalculator \
     Launcher3QuickStep \
     messaging \
     OmniJaws \
-    Simple-Gallery \
-    stats \
     Stk \
     ForceStop \
     Updater
