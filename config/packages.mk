@@ -16,13 +16,24 @@
 PRODUCT_PACKAGES += \
     PhoneLocationProvider
 
+ifeq ($(SUDA_CPU_ABI),arm64-v8a)
+PRODUCT_PACKAGES += \
+    GooglePinYin
+
+PRODUCT_COPY_FILES += $(shell test -d vendor/arrow/prebuilt/common/app/GooglePinYin && \
+    find vendor/arrow/prebuilt/common/app/GooglePinYin -name '*.so' \
+    -printf '%p:system/app/GooglePinYin/lib/arm64/%f ')
+else
+PRODUCT_PACKAGES += \
+    LatinIME
+endif
+
 # Required packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
     Browser \
     Calendar \
     ExactCalculator \
-    LatinIME \
     Launcher3QuickStep \
     messaging \
     OmniJaws \
