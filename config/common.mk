@@ -40,12 +40,12 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/build/tools/backuptool_ab.sh:system/bin/backuptool_ab.sh \
     vendor/arrow/build/tools/backuptool_ab.functions:system/bin/backuptool_ab.functions \
     vendor/arrow/build/tools/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
-else
+endif
+
 PRODUCT_COPY_FILES += \
     vendor/arrow/build/tools/backuptool.sh:install/bin/backuptool.sh \
     vendor/arrow/build/tools/backuptool.functions:install/bin/backuptool.functions \
     vendor/arrow/build/tools/50-cm.sh:system/addon.d/50-cm.sh
-endif
 
 # Use all private libraries
 ifeq ($(SUDA_CPU_ABI),arm64-v8a)
