@@ -37,8 +37,7 @@ PRODUCT_PACKAGES += \
     messaging \
     OmniJaws \
     Stk \
-    ForceStop \
-    Updater
+    ForceStop
 
 # Themes Dark
 PRODUCT_PACKAGES += \

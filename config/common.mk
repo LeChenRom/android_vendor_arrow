@@ -85,3 +85,6 @@ include vendor/arrow/config/packages.mk
 
 # Props
 include vendor/arrow/config/props.mk
+
+# GApps
+include vendor/arrow/prebuilt/gapps/kronic-gapps.mk
