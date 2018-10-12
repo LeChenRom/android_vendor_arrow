@@ -33,7 +33,6 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     Calendar \
     ExactCalculator \
-    Launcher3QuickStep \
     messaging \
     OmniJaws \
     Stk \
